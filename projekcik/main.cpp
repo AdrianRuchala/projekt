@@ -60,9 +60,21 @@ int main()
         int x1;
         int x2;
         delta=(b*b)-(4*(a*c));
-        x1=(-b-sqrt(delta))/2*a;
-        x2=(-b+sqrt(delta))/2*a;
-        cout<<"Miejsca zerowe tej funkcji to: x1= "<<x1<<", x2= "<<x2;
+        if (delta>0)
+        {
+            x1=(-b-sqrt(delta))/2*a;
+            x2=(-b+sqrt(delta))/2*a;
+            cout<<"Miejsca zerowe tej funkcji to: x1= "<<x1<<", x2= "<<x2;
+        }else if (delta==0)
+        {
+            x1=(-b)/2*a;
+            cout<<"Miejscem zerowym tej funkcji jest: x1= "<<x1;
+        }else if (delta<0)
+        {
+            cout<<"Brak miejsc zerowych";
+        }
+
+
         break;
         }
 
