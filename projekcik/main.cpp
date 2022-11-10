@@ -59,6 +59,20 @@ int main()
         int delta;
         int x1;
         int x2;
+        if (a==0){
+            if (b==0 && c==0)
+            {
+                x1=0;
+                cout<<"Miejsce zerowe tej funkcji to: "<<x1;
+            }else if (b==0 && c!=0)
+            {
+                cout<<"Funkcja nie ma miejsc zerowych";
+            }else
+            {
+            x1=-c/b;
+            cout<<"Miejsce zerowe tej funkcji to: "<<x1;
+            }
+        }else{
         delta=(b*b)-(4*(a*c));
         if (delta>0)
         {
@@ -77,6 +91,9 @@ int main()
 
         break;
         }
+
+        }
+
 
 
     return 0;
