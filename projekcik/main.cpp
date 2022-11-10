@@ -59,7 +59,7 @@ int main()
         int delta;
         int x1;
         int x2;
-        if (a==0){
+        if (a==0){                      //jezeli a=0
             if (b==0 && c==0)
             {
                 x1=0;
