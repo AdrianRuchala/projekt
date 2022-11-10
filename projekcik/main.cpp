@@ -10,7 +10,10 @@ int main()
     int c;
     int x;
     int z;
+    int l;
     int o;
+    int p;
+    int q;
     cout<<"wybierz funkcje: 1=liniowa, 2=kwadratowa"<<endl;
     cin>>o;
     switch (o)
@@ -50,6 +53,11 @@ int main()
         }
         break;
     case 2:     //kwadratowa
+        cout<<"wybierz postac funkcji kwadratowe: 1=postac ogolna, 2=postac kanoniczna"<<endl;
+        cin>>l;
+        switch (l)
+    {
+    case 1:
         cout<<"Podaj a: ";
         cin>>a;
         cout<<"Podaj b: ";
@@ -87,11 +95,32 @@ int main()
         {
             cout<<"Brak miejsc zerowych";
         }
-
-
+        break;
+    case 2:
+        cout<<"Podaj a: ";
+        cin>>a;
+        cout<<"Podaj p: ";
+        cin>>p;
+        cout<<"Podaj q: ";
+        cin>>q;
+        b=-((2*a)*p);
+        delta=-((4*a)*q);
+        if(delta>0)
+        {
+            x1=(-b-sqrt(delta))/2*a;
+            x2=(-b+sqrt(delta))/2*a;
+            cout<<"Miejsca zerowe tej funkcji to: x1= "<<x1<<", x2= "<<x2;
+        }else if (delta==0)
+        {
+            x1=(-b)/2*a;
+            cout<<"Miejscem zerowym tej funkcji jest: x1= "<<x1;
+        }else if (delta<0)
+        {
+            cout<<"Brak miejsc zerowych";
+        }
         break;
         }
-
+        }
         }
 
 
