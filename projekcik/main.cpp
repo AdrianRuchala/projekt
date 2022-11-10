@@ -96,7 +96,7 @@ int main()
             cout<<"Brak miejsc zerowych";
         }
         break;
-    case 2:
+    case 2:                     //kanoniczna
         cout<<"Podaj a: ";
         cin>>a;
         cout<<"Podaj p: ";
